@@ -40,6 +40,6 @@
 ![Pitch deck](Images/image1.png)
 
 #### Valuation mode:
-![Sample Image](Images/image1.png)
+![Sample Image](Images/image2.png)
 
 
