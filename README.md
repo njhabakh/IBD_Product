@@ -31,6 +31,15 @@
 - Upload excel file and get the formula and code
 
 ### Agent based architecture
-- Upload excel file and get the formula and code
+- CrewAI
+
+
+## Screenshots
+
+#### Pitch Deck generator:
+![Sample Image](images/image1.png)
+
+#### Valuation mode:
+![Sample Image](images/image1.png)
 
 
