@@ -198,9 +198,6 @@ def generate_slide_content(slide_name, custom_prompt=None):
     # Correct the model name
     MODEL = "gpt-4"  # Replace with an appropriate model name, such as "gpt-3.5-turbo"
 
-    # Example prompt for the model
-    prompt = "What are the key components of an investment banking pitch book?"
-
     # Call the OpenAI API (New method for v1.0.0 and above)
     response = openai.chat.completions.create(
         model=MODEL,  # You can change the model as needed
