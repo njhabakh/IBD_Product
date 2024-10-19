@@ -37,9 +37,9 @@
 ## Screenshots
 
 #### Pitch Deck generator:
-![Sample Image](images/image1.png)
+![Pitch deck](Images/image1.png)
 
 #### Valuation mode:
-![Sample Image](images/image1.png)
+![Sample Image](Images/image1.png)
 
 
