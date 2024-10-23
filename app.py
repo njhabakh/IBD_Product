@@ -12,23 +12,32 @@ from PyPDF2 import PdfReader
 from bs4 import BeautifulSoup
 import sqlalchemy
 from sqlalchemy import create_engine
-# Import LangChain or similar library if needed for agent-based solutions
-# from langchain.agents import initialize_agent
+from langchain.chat_models import AzureChatOpenAI
 
-# Set your OpenAI API key
-#openai.api_key = os.getenv("OPENAI_API_KEY")  # Ensure your API key is set in environment variables
-# Set the API key and model name
-MODEL = "gpt-4o-mini"  # Correct model name; adjust based on what you want to use
+from dotenv import load_dotenv
+load_dotenv(".env")
 
-# Define the path to your API key file
-key_file_path = r"D:\Python\KeyOpenAI.txt"
+os.environ["AZURE_OPENAI_API_KEY"]     = os.environ.get("AZURE_OPENAI_API_KEY")
+os.environ["AZURE_OPENAI_ENDPOINT"]    = os.environ.get("AZURE_OPENAI_ENDPOINT")
+os.environ["AZURE_OPENAI_API_VERSION"] = os.environ.get("AZURE_OPENAI_API_VERSION")
 
-# Read the API key from the text file
-def load_api_key(filepath):
-    with open(filepath, 'r') as file:
-        return file.read().strip()
-    
-openai.api_key = load_api_key(key_file_path)
+def create_vector_database(txt_path):
+    loader = TextLoader(txt_path)
+    docs = loader.load()
+    documents = RecursiveCharacterTextSplitter(
+        chunk_size=1000, separators=["\n","\n\n"], chunk_overlap=200
+    ).split_documents(docs)
+
+    embeddings = AzureOpenAIEmbeddings(
+        azure_deployment=os.environ.get("OPENAI_API_BASE"),
+        openai_api_version=os.environ.get("OPENAI_API_VERSION"),
+    )
+    db = FAISS.from_documents(
+        documents=documents,
+        embedding=embeddings
+    )
+    db.save_local("./faiss-db")
+
 
 def main():
     st.title("Investment Banking Analyst Toolkit")
@@ -190,32 +199,32 @@ def generate_slide_content(slide_name, custom_prompt=None):
     else:
         prompt = f"Provide information on {slide_name} for a pitch book presentation."
 
-    # Generate content using OpenAI's ChatCompletion API (version 1.0.0+)
-    # Example call to the OpenAI API using ChatCompletion for chat model
-    import os
-    import openai
 
-    # Correct the model name
-    MODEL = "gpt-4"  # Replace with an appropriate model name, such as "gpt-3.5-turbo"
+    llm = AzureChatOpenAI(
+    azure_deployment=os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT"),
+    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
+    openai_api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+    api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
+    verbose=False,
+    temperature=0.3,
+)
 
-    # Call the OpenAI API (New method for v1.0.0 and above)
-    response = openai.chat.completions.create(
-        model=MODEL,  # You can change the model as needed
-        messages=[
-            {"role": "system", "content": "You are an assistant helping with investment banking slides."},
-            {"role": "user", "content": prompt}
-        ],
+    from langchain.schema import (
+    SystemMessage,
+    HumanMessage,
+    AIMessage
+    )
+    messages = [
+        SystemMessage(content=f"You are an assistant helping with investment banking slides.  {prompt}" )                
+    ]
+
+    response = llm(
+        messages= messages,
         max_tokens=100,
         temperature=0.2,
     )
 
-    # Extract the content from the response
-    content = response.choices[0].message.content.strip()
-
-    # Print or use the content as needed
-    print(content)
-
-    #print(response.choices[0].message['content'].strip())
+    content = response.content
 
     # Generate charts if applicable
     if slide_name == "Market Analysis" and not custom_prompt:
@@ -298,7 +307,7 @@ def generate_data_driven_slide(uploaded_files, news_links, db_type, db_host, db_
                 {"role": "system", "content": "You are an assistant helping with investment banking slides."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=100,
+            max_tokens=500,
             temperature=0.2,
         )
         content = response.choices[0].message.content.strip()        

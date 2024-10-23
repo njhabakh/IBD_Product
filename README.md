@@ -1,8 +1,14 @@
 
 # Steps
-- conda create --name ibd python=3.10
-- conda update --name ibd <path to environment.yml file>
-- Update the file for OpenAI Key
+- conda env create --file=environment_2.yml  
+
+- Create and update the .env file
+ -- AZURE_OPENAI_API_KEY = end point key
+ -- AZURE_OPENAI_ENDPOINT = details of your resource
+ -- AZURE_OPENAI_API_VERSION = 
+ -- AZURE_OPENAI_CHAT_DEPLOYMENT = name of your llm deployement
+ -- AZURE_OPENAI_EMBEDDINGS_DEPLOYMENT = name of your embedding model deployement
+
 - streamlit run app.py
 
 
