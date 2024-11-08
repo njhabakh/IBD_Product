@@ -1,0 +1,194 @@
+{
+    "JBLU": [
+        {
+            "uuid": "8d7ac36b-3500-34c0-b41f-bc679bc1ab6c",
+            "title": "US Airline Stocks Gain Altitude Post Trump's Re-Election: Here's Why",
+            "publisher": "Zacks",
+            "link": "https://finance.yahoo.com/news/us-airline-stocks-gain-altitude-173500788.html",
+            "providerPublishTime": 1731000900,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/Kuj2E.3PQSQ7STLdzNlGKw--~B/aD00MTM7dz02MjA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/eda96dd8471d3bec12aee10386e0476e",
+                        "width": 620,
+                        "height": 413,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/OwVqt9FFXyBGJTQzkkSfRw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/zacks.com/eda96dd8471d3bec12aee10386e0476e",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "JBLU",
+                "SAVE",
+                "DAL"
+            ]
+        },
+        {
+            "uuid": "d858bf6f-47b8-32f9-ab68-bdc69d78d963",
+            "title": "Heard on the Street: Trump Makes Airlines Great Again, but Why?",
+            "publisher": "The Wall Street Journal",
+            "link": "https://finance.yahoo.com/m/d858bf6f-47b8-32f9-ab68-bdc69d78d963/heard-on-the-street%3A-trump.html",
+            "providerPublishTime": 1730996439,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/Fwf5HL4GsEGPbDfR3MJBPg--~B/aD02MzA7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+                        "width": 1200,
+                        "height": 630,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/zIJaagDuCJitt1Cvcwyc7A--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "JBLU",
+                "UAL",
+                "ULCC",
+                "BABWF",
+                "ICAGY"
+            ]
+        },
+        {
+            "uuid": "285adb7f-be36-3ede-8aae-0655b77689ad",
+            "title": "Airline stocks outperform S&P 500 in October: BofA",
+            "publisher": "Investing.com",
+            "link": "https://finance.yahoo.com/news/airline-stocks-outperform-p-500-125406879.html",
+            "providerPublishTime": 1730897646,
+            "type": "STORY",
+            "relatedTickers": [
+                "^GSPC",
+                "DAL",
+                "SAVE",
+                "JBLU",
+                "UAL",
+                "LUV"
+            ]
+        },
+        {
+            "uuid": "df562106-2936-3073-89d6-e6b3c2f4e63a",
+            "title": "JetBlue Airways Launches Direct Flight to Bonaire From New York",
+            "publisher": "MT Newswires",
+            "link": "https://finance.yahoo.com/news/jetblue-airways-launches-direct-flight-145006978.html",
+            "providerPublishTime": 1730818206,
+            "type": "STORY",
+            "relatedTickers": [
+                "JBLU"
+            ]
+        },
+        {
+            "uuid": "9aac3c67-f612-317c-9f51-27b32459dc99",
+            "title": "From NYC to the ABCs: JetBlue Begins More Caribbean Service with Flights to Bonaire",
+            "publisher": "Business Wire",
+            "link": "https://finance.yahoo.com/news/nyc-abcs-jetblue-begins-more-122500118.html",
+            "providerPublishTime": 1730809500,
+            "type": "STORY",
+            "relatedTickers": [
+                "JBLU"
+            ]
+        },
+        {
+            "uuid": "9b2259bb-7821-382f-aa77-11de16507bc1",
+            "title": "Is Spirit Airlines Worth the Gamble Amid Bankruptcy Fears?",
+            "publisher": "Motley Fool",
+            "link": "https://finance.yahoo.com/m/9b2259bb-7821-382f-aa77-11de16507bc1/is-spirit-airlines-worth-the.html",
+            "providerPublishTime": 1730586600,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/MUChVqbVKysUyxYB_J3bwg--~B/aD04MDA7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/motleyfool.com/29a17b096e993bd60994511516a08a51",
+                        "width": 1200,
+                        "height": 800,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/AH7qJZVROFP49DPh80gHeQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/motleyfool.com/29a17b096e993bd60994511516a08a51",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "SAVE",
+                "JBLU"
+            ]
+        },
+        {
+            "uuid": "7cad5834-fed2-3f52-956f-05775cb7f7c7",
+            "title": "New DOT rule requires airlines to refund travelers for flight delays",
+            "publisher": "Yahoo Finance Video",
+            "link": "https://finance.yahoo.com/video/dot-rule-requires-airlines-refund-171500384.html",
+            "providerPublishTime": 1730481300,
+            "type": "VIDEO",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/ZtqJ.Tt7qRgVYusd9Hya2A--~B/aD00NTA0O3c9ODAwMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2024-11/2d647430-986d-11ef-8df6-90bebb417170",
+                        "width": 8000,
+                        "height": 4504,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/AudTBTotFlr.W.YKLRIqyw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2024-11/2d647430-986d-11ef-8df6-90bebb417170",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "UAL",
+                "AAL",
+                "SAVE",
+                "DAL",
+                "ALK",
+                "ULCC",
+                "JBLU",
+                "LUV"
+            ]
+        },
+        {
+            "uuid": "d3438342-100f-3ecf-a407-eaa820160e25",
+            "title": "Airline Stock Roundup: LUV, AAL & JBLU's Q3 Earnings Reports & SAVE in Focus",
+            "publisher": "Zacks",
+            "link": "https://finance.yahoo.com/news/airline-stock-roundup-luv-aal-123200668.html",
+            "providerPublishTime": 1730377920,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/F84IJmCIiWizKxKz1rxd6w--~B/aD00MDA7dz02MzU7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/8c8fda3aadd8e857bc00720446b58daf",
+                        "width": 635,
+                        "height": 400,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/S8dm3iE9NbFwF5iHX7iCnA--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/zacks.com/8c8fda3aadd8e857bc00720446b58daf",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "LUV",
+                "JBLU",
+                "SAVE",
+                "AAL"
+            ]
+        }
+    ]
+}

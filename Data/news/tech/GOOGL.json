@@ -1,0 +1,229 @@
+{
+    "GOOGL": [
+        {
+            "uuid": "77b1c82f-eaa7-3f58-b2c8-a57809bf7de5",
+            "title": "ANZ Profit Drops as Competition Bites in Home-Lending Market",
+            "publisher": "Bloomberg",
+            "link": "https://finance.yahoo.com/news/anz-profit-drops-competition-bites-204028977.html",
+            "providerPublishTime": 1731013456,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/Sr0fB1ku3b5jObDNM6TUJw--~B/aD0xMzMzO3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/bloomberg_markets_842/7a5a1b97c80a3b556918be33593a2b66",
+                        "width": 2000,
+                        "height": 1333,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/WerlYoep5odqcXM845VcIA--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_markets_842/7a5a1b97c80a3b556918be33593a2b66",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "AAPL",
+                "GOOG",
+                "ANZGF",
+                "ANZGY"
+            ]
+        },
+        {
+            "uuid": "ab6b2c16-4289-3195-b9ae-b869ba6243b6",
+            "title": "AI Thermostats Pitched for Texas Homes to Relieve Stressed Grid",
+            "publisher": "Bloomberg",
+            "link": "https://finance.yahoo.com/news/ai-thermostats-pitched-texas-homes-210000983.html",
+            "providerPublishTime": 1731013200,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/rq4_Z_o_NWxt..8vz2WVmQ--~B/aD0yNjY3O3c9NDAwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/bloomberg_technology_68/80125b8ea08b0478d17e34eb54eecdd8",
+                        "width": 4000,
+                        "height": 2667,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/zmPledfFDiNDzvF2iQnmGQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/bloomberg_technology_68/80125b8ea08b0478d17e34eb54eecdd8",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "NRG",
+                "GOOG"
+            ]
+        },
+        {
+            "uuid": "c46377e8-901b-3041-bf03-6afb02f892e1",
+            "title": "Jim Cramer Says Alphabet (GOOGL) Stock Can \u2018Keep Running for Days and Days\u2019",
+            "publisher": "Insider Monkey",
+            "link": "https://finance.yahoo.com/news/jim-cramer-says-alphabet-googl-191713182.html",
+            "providerPublishTime": 1731007033,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/cgZa_z6RhHiOammFKTHJog--~B/aD04MTY7dz0xNDU2O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/insidermonkey.com/ddded06c9301164bc21c334085fab02f",
+                        "width": 1456,
+                        "height": 816,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/W5yH6HwYmU4AazoXecDRhQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/insidermonkey.com/ddded06c9301164bc21c334085fab02f",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "GOOG"
+            ]
+        },
+        {
+            "uuid": "cbe96866-21f9-3990-902c-152d480a35d9",
+            "title": "Trump Trade? Is Google Stock A Buy Or Sell Amid Trump Return To White House?",
+            "publisher": "Investor's Business Daily",
+            "link": "https://finance.yahoo.com/m/cbe96866-21f9-3990-902c-152d480a35d9/trump-trade%3F-is-google-stock.html",
+            "providerPublishTime": 1730993483,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/aFcDPgtSTk0D1LSh43hUFA--~B/aD01NjM7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/72ff211bba1161357e98bdef17aca65d",
+                        "width": 1000,
+                        "height": 563,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/_iRGIYqn1_1rgLm.UcIRFw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/72ff211bba1161357e98bdef17aca65d",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "GOOG"
+            ]
+        },
+        {
+            "uuid": "3b553bd1-2d66-34e4-82b4-bacefc32e12f",
+            "title": "Buy 3 High ROE Stocks as Markets Surge on Trump's Election Win",
+            "publisher": "Zacks",
+            "link": "https://finance.yahoo.com/news/buy-3-high-roe-stocks-141900971.html",
+            "providerPublishTime": 1730989140,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/9o61YjkzKDbBgC6Ivy29Vw--~B/aD00MDA7dz02MzU7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/30e90ac213ebedcfe9ef1b79c529169c",
+                        "width": 635,
+                        "height": 400,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/zayBmzsr4tnY7atTiJExTg--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/zacks.com/30e90ac213ebedcfe9ef1b79c529169c",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "RF",
+                "GOOG",
+                "LDOS"
+            ]
+        },
+        {
+            "uuid": "8b39482f-357d-3b5e-bac0-4d7208ca7a0d",
+            "title": "HealthStream, Inc. (HSTM) Soars to 52-Week High, Time to Cash Out?",
+            "publisher": "Zacks",
+            "link": "https://finance.yahoo.com/news/healthstream-inc-hstm-soars-52-141526087.html",
+            "providerPublishTime": 1730988926,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/ZVGBNd2_.kAicju5mLde7g--~B/aD02MDA7dz05MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/71afbbc0512eb3c471136d93f39079c9",
+                        "width": 900,
+                        "height": 600,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/lCdXNO5h4hmjtS7ps0voGA--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/zacks.com/71afbbc0512eb3c471136d93f39079c9",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "HSTM",
+                "GOOG"
+            ]
+        },
+        {
+            "uuid": "073e4ef7-9859-3699-b07d-d704d0f4e2cb",
+            "title": "If I Could Buy Only 1 \"Magnificent Seven\" Stock Over the Next 10 Years, This Would Be It",
+            "publisher": "Motley Fool",
+            "link": "https://finance.yahoo.com/m/073e4ef7-9859-3699-b07d-d704d0f4e2cb/if-i-could-buy-only-1.html",
+            "providerPublishTime": 1730988420,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/fGWkWMw.LZX.9R7S7t71zw--~B/aD05MzM7dz0xNDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/motleyfool.com/7546fe5b8c15d0c5a2d7db7fd320c550",
+                        "width": 1400,
+                        "height": 933,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/HUDDhGrbp2mwO7kn6Up0HQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/motleyfool.com/7546fe5b8c15d0c5a2d7db7fd320c550",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "AMZN",
+                "MSFT",
+                "GOOG"
+            ]
+        },
+        {
+            "uuid": "986db3f8-51f0-377e-9b10-f6ed6e0b5c94",
+            "title": "Here's How Much a $1000 Investment in Alphabet Made 10 Years Ago Would Be Worth Today",
+            "publisher": "Zacks",
+            "link": "https://finance.yahoo.com/news/heres-much-1000-investment-alphabet-133005048.html",
+            "providerPublishTime": 1730986205,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/CorpxfcSD3xaruoFanouDg--~B/aD00NzY7dz05MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/ace7df31c7fcb10255abe7c990ea373a",
+                        "width": 900,
+                        "height": 476,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/pdW5wHTIEKqiEK3RrmtVaw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/zacks.com/ace7df31c7fcb10255abe7c990ea373a",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "GOOG"
+            ]
+        }
+    ]
+}

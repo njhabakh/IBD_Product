@@ -1,0 +1,229 @@
+{
+    "AMZN": [
+        {
+            "uuid": "0542a964-8bb7-3b38-93d5-40521fde0f7a",
+            "title": "Trump Trade, Fed decision, US dollar: Market Takeaways",
+            "publisher": "Yahoo Finance Video",
+            "link": "https://finance.yahoo.com/video/trump-trade-fed-decision-us-230500553.html",
+            "providerPublishTime": 1731020700,
+            "type": "VIDEO",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/sKyBSz2eJmRqp74xG5iAFw--~B/aD0yMzY1O3c9NDIwMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2024-10/567473d0-9d58-11ef-bdc1-95761176e902",
+                        "width": 4200,
+                        "height": 2365,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/sNMtHykdcfndOpUxlH65Sw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2024-10/567473d0-9d58-11ef-bdc1-95761176e902",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "^GSPC",
+                "BTC-USD",
+                "TSLA",
+                "DX-Y.NYB",
+                "AMZN",
+                "XLF",
+                "XLK",
+                "^NDX",
+                "^DJI",
+                "^IXIC"
+            ]
+        },
+        {
+            "uuid": "6705fa53-a533-36ec-8058-4785b098f96c",
+            "title": "S&P 500 Leader 'In Discussions With Two Particular Large Companies'; Adds $1 Billion To Buyback",
+            "publisher": "Investor's Business Daily",
+            "link": "https://finance.yahoo.com/m/6705fa53-a533-36ec-8058-4785b098f96c/s%26p-500-leader-%27in.html",
+            "providerPublishTime": 1731015940,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/wUkKYlpWzxQF4tXSPhv4TQ--~B/aD01NjM7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/745e02430dbabc148d58e834f03b0198",
+                        "width": 1000,
+                        "height": 563,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/I_QOLugvjlmbJxYdioCT8Q--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/745e02430dbabc148d58e834f03b0198",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "CEG",
+                "VST",
+                "MSFT",
+                "AMZN"
+            ]
+        },
+        {
+            "uuid": "a08b5263-f586-3353-ba1f-9135d77eec82",
+            "title": "Top Stock Reports for Amazon.com, Procter & Gamble & Abbott",
+            "publisher": "Zacks",
+            "link": "https://finance.yahoo.com/news/top-stock-reports-amazon-com-212000075.html",
+            "providerPublishTime": 1731014400,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/2LFZtQ4QY0iOdI9Be9eIpg--~B/aD00MDA7dz02MzU7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/zacks.com/c2b1983a88989a83273dbd18c6fe65e8",
+                        "width": 635,
+                        "height": 400,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/fmOB._6wNRuJ6pfMZ29s4w--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/zacks.com/c2b1983a88989a83273dbd18c6fe65e8",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "PG",
+                "ABT",
+                "AMZN",
+                "OKE"
+            ]
+        },
+        {
+            "uuid": "acf3f042-0f88-37a6-84a1-96f9c4729ca1",
+            "title": "Amazon workers in Alabama will have third labor union vote after judge finds illegal influence",
+            "publisher": "Associated Press Finance",
+            "link": "https://finance.yahoo.com/news/amazon-workers-alabama-third-labor-203108759.html",
+            "providerPublishTime": 1731011468,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/4FWWbSgBs2d.dOLi0i5VzQ--~B/aD00NDMyO3c9NjU2NzthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/ap_finance_articles_694/5489e91263d1671a10cc51227015b580",
+                        "width": 6567,
+                        "height": 4432,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/dY9C6H.tX.1Q2aYRTgBe4g--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ap_finance_articles_694/5489e91263d1671a10cc51227015b580",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "AMZN"
+            ]
+        },
+        {
+            "uuid": "a12e1a2c-758c-35ae-abd1-60ced07d063c",
+            "title": "Microsoft Shows Room To Climb As Tesla, Nvidia, Amazon Near 52-Week Highs",
+            "publisher": "Benzinga",
+            "link": "https://finance.yahoo.com/news/microsoft-shows-room-climb-tesla-202721052.html",
+            "providerPublishTime": 1731011241,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/5vsvbxPBsbY8aWPH3yEsrQ--~B/aD00ODA7dz03MjA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/benzinga_79/16f7c38ee622cc6a51b0b5d572d0948c",
+                        "width": 720,
+                        "height": 480,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/eQMHhyVznhg83L3Yjj8kAQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/benzinga_79/16f7c38ee622cc6a51b0b5d572d0948c",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "MSFT",
+                "NVDA",
+                "TSLA",
+                "AMZN"
+            ]
+        },
+        {
+            "uuid": "2f4c0c07-7624-360e-a8ad-c8275258ee1f",
+            "title": "Amazon.com (AMZN)\u2019s AI and Innovation: Leading the Future of Technology and Energy",
+            "publisher": "Insider Monkey",
+            "link": "https://finance.yahoo.com/news/amazon-com-amzn-ai-innovation-192357063.html",
+            "providerPublishTime": 1731007437,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/pPqnw_f5ocAlq67trfHI3Q--~B/aD04MTY7dz0xNDU2O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/insidermonkey.com/226ed9ed0936942adb97f3d56073e411",
+                        "width": 1456,
+                        "height": 816,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/PCHzye.KfUEayfK16aZCyQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/insidermonkey.com/226ed9ed0936942adb97f3d56073e411",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "AMZN"
+            ]
+        },
+        {
+            "uuid": "01f9763e-cd37-400d-aaeb-9f7e028897d5",
+            "title": "Big Tech CEOs rush to congratulate Trump on election win",
+            "publisher": "Yahoo Finance",
+            "link": "https://finance.yahoo.com/news/big-tech-ceos-rush-to-congratulate-trump-on-election-win-180554274.html",
+            "providerPublishTime": 1731002754,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/TpFT1eBqPjKwXMA7VNkkDw--~B/aD0yNTk0O3c9Mzg5MTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2024-11/c50000a0-9c16-11ef-afff-3875574af7ea",
+                        "width": 3891,
+                        "height": 2594,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/RCTbnj0zGLjSJJeBs4N7sQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2024-11/c50000a0-9c16-11ef-afff-3875574af7ea",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "AMD",
+                "MSFT",
+                "AMZN",
+                "INTC",
+                "AAPL",
+                "NVDA",
+                "META"
+            ]
+        },
+        {
+            "uuid": "3eed05ab-f23e-3b34-a950-73f31cf82458",
+            "title": "Q3 2024 Laird Superfood Inc Earnings Call",
+            "publisher": "Thomson Reuters StreetEvents",
+            "link": "https://finance.yahoo.com/news/q3-2024-laird-superfood-inc-173944024.html",
+            "providerPublishTime": 1731001184,
+            "type": "STORY",
+            "relatedTickers": [
+                "LSF",
+                "AMZN"
+            ]
+        }
+    ]
+}

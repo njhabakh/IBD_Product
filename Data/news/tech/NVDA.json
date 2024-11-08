@@ -1,0 +1,236 @@
+{
+    "NVDA": [
+        {
+            "uuid": "b017c26b-e05c-35d1-94b0-b85c5a8b3a56",
+            "title": "Paramount earnings, Nvidia joins Dow index: What to Watch",
+            "publisher": "Yahoo Finance Video",
+            "link": "https://finance.yahoo.com/video/paramount-earnings-nvidia-joins-dow-220411424.html",
+            "providerPublishTime": 1731017051,
+            "type": "VIDEO",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/c7RaG5ahDbwiqsVZxvZoaQ--~B/aD00MDU7dz03MjA7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/os/creatr-uploaded-images/2024-11/adc937b0-9d4e-11ef-87de-12ed1f449c87",
+                        "width": 720,
+                        "height": 405,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/JMrW4R8EsbsvaqRRKKHA.w--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2024-11/adc937b0-9d4e-11ef-87de-12ed1f449c87",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "^GSPC",
+                "NVDA",
+                "^IXIC",
+                "^DJI",
+                "PARA",
+                "PARAA"
+            ]
+        },
+        {
+            "uuid": "f78ca3e3-72fb-34e3-8322-2541e7b0c89b",
+            "title": "Nvidia surpasses $3.6 trillion market value after Trump win",
+            "publisher": "Reuters",
+            "link": "https://finance.yahoo.com/news/nvidia-surpasses-3-6-trillion-213449033.html",
+            "providerPublishTime": 1731015289,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/xUzvTCOFqyAjvmvFc_eyig--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters-finance.com/dce9dbde74728c0aa8ed3a4b59e8e60d",
+                        "width": 800,
+                        "height": 533,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/rUZDj2Q4h6pzxOp0Tg9WVA--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/reuters-finance.com/dce9dbde74728c0aa8ed3a4b59e8e60d",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "NVDA",
+                "AAPL",
+                "MSFT"
+            ]
+        },
+        {
+            "uuid": "835711a9-646b-3d1b-a726-7ab357aaa48c",
+            "title": "NVIDIA Names Ellen Ochoa to Board of Directors",
+            "publisher": "GlobeNewswire",
+            "link": "https://finance.yahoo.com/news/nvidia-names-ellen-ochoa-board-213000560.html",
+            "providerPublishTime": 1731015000,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/W1uuJPPloY3Xj_kXL7ZShQ--~B/aD00MTg4O3c9MzUyMTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/globenewswire.com/924420dbff16d82a8ca4159c1d4ebea9",
+                        "width": 3521,
+                        "height": 4188,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/91PPx0PdTjDENrLrySDO3Q--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/globenewswire.com/924420dbff16d82a8ca4159c1d4ebea9",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "NVDA"
+            ]
+        },
+        {
+            "uuid": "239604e8-19fa-33c3-a9d9-b589eca94130",
+            "title": "Taiwan Semi Was a Rare Decliner After Trump\u2019s Election. Why the Stock Might Be a Bargain.",
+            "publisher": "Barrons.com",
+            "link": "https://finance.yahoo.com/m/239604e8-19fa-33c3-a9d9-b589eca94130/taiwan-semi-was-a-rare.html",
+            "providerPublishTime": 1731012780,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/qm8VVQh01UofH6DUQGq_3Q--~B/aD02NDA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/Barrons.com/008dc94d9cb85f36d2254476cfff1626",
+                        "width": 1280,
+                        "height": 640,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/y2ofhgq443BUXam1b64s0Q--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/Barrons.com/008dc94d9cb85f36d2254476cfff1626",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "TSM",
+                "NVDA"
+            ]
+        },
+        {
+            "uuid": "d31aaf06-61c7-3873-9293-88753c23cb8c",
+            "title": "Nvidia Who? Savvy Investors Can't Get Enough Of This AI Behemoth",
+            "publisher": "Investor's Business Daily",
+            "link": "https://finance.yahoo.com/m/d31aaf06-61c7-3873-9293-88753c23cb8c/nvidia-who%3F-savvy-investors.html",
+            "providerPublishTime": 1731012393,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/iFaYq0Lhw3tK4Z.e7ihEZw--~B/aD01NjM7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/0ae3bbec0e17cc0b9aea2536bbcb9bf1",
+                        "width": 1000,
+                        "height": 563,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/btjrznVv_rxiGeaBvuduLw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/0ae3bbec0e17cc0b9aea2536bbcb9bf1",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "AVGO",
+                "PLTR",
+                "NVDA",
+                "META"
+            ]
+        },
+        {
+            "uuid": "a12e1a2c-758c-35ae-abd1-60ced07d063c",
+            "title": "Microsoft Shows Room To Climb As Tesla, Nvidia, Amazon Near 52-Week Highs",
+            "publisher": "Benzinga",
+            "link": "https://finance.yahoo.com/news/microsoft-shows-room-climb-tesla-202721052.html",
+            "providerPublishTime": 1731011241,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/5vsvbxPBsbY8aWPH3yEsrQ--~B/aD00ODA7dz03MjA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/benzinga_79/16f7c38ee622cc6a51b0b5d572d0948c",
+                        "width": 720,
+                        "height": 480,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/eQMHhyVznhg83L3Yjj8kAQ--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/benzinga_79/16f7c38ee622cc6a51b0b5d572d0948c",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "MSFT",
+                "NVDA",
+                "TSLA",
+                "AMZN"
+            ]
+        },
+        {
+            "uuid": "3ea1184c-5a73-3eb6-9e62-aab9dda34953",
+            "title": "Find The Next Palantir, Nvidia And Hot IPO With This Customizable Tool",
+            "publisher": "Investor's Business Daily",
+            "link": "https://finance.yahoo.com/m/3ea1184c-5a73-3eb6-9e62-aab9dda34953/find-the-next-palantir%2C.html",
+            "providerPublishTime": 1731010681,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/I.7X23VTWeDE1Cd8rUFwEA--~B/aD01MTE7dz0xMDAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/8dff45082c2de896087f301f9772e2fd",
+                        "width": 1000,
+                        "height": 511,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/sYjLmzwvHn2Q6exXi9rf.Q--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/ibd.com/8dff45082c2de896087f301f9772e2fd",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "PLTR",
+                "AVGO",
+                "NVDA"
+            ]
+        },
+        {
+            "uuid": "d36da313-3ea4-31b8-ab79-df9677914a06",
+            "title": "Jim Cramer on Nvidia (NVDA) Pullback: \u2018The Greatest Stock of This Generation\u2019 Is Taking a Break",
+            "publisher": "Insider Monkey",
+            "link": "https://finance.yahoo.com/news/jim-cramer-nvidia-nvda-pullback-191010710.html",
+            "providerPublishTime": 1731006610,
+            "type": "STORY",
+            "thumbnail": {
+                "resolutions": [
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/wnLQsLNcrpv.Qq7Mojnmbg--~B/aD04MDA7dz02MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/insidermonkey.com/dc5a2bcb6b4c16a43cb5b4ba98feb139",
+                        "width": 600,
+                        "height": 800,
+                        "tag": "original"
+                    },
+                    {
+                        "url": "https://s.yimg.com/uu/api/res/1.2/Sm2PTnDPXqM_BcLJt7Jimw--~B/Zmk9ZmlsbDtoPTE0MDtweW9mZj0wO3c9MTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/insidermonkey.com/dc5a2bcb6b4c16a43cb5b4ba98feb139",
+                        "width": 140,
+                        "height": 140,
+                        "tag": "140x140"
+                    }
+                ]
+            },
+            "relatedTickers": [
+                "NVDA"
+            ]
+        }
+    ]
+}
