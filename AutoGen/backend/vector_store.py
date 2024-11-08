@@ -32,22 +32,22 @@ def create_vector_database(file_path: str):
 
 
 
-data_folder = "../../../Data"
+# data_folder = "../../../Data"
+#
+# file_mapping = {
+#     'sec_filling': f"{data_folder}/10k/",
+#     'research_report': f'{data_folder}/research_reports/',
+#     'news': f'{data_folder}/news/',
+# }
 
-file_mapping = {
-    'sec_filling': f"{data_folder}/10k/",
-    'research_report': f'{data_folder}/research_reports/',
-    'news': f'{data_folder}/news/',
-}
-
-def initialize_vector_store(fill_mapping: dict):
+def initialize_vector_store(file_mapping: dict):
     global sec_filling_db
     global research_db
-    global news_db
+    # global news_db
 
     sec_filling_db = create_vector_database(file_mapping['sec_filling'])
     research_db = create_vector_database(file_mapping['research_report'])
-    news_db = create_vector_database(file_mapping['news'])
+    # news_db = create_vector_database(file_mapping['news'])
 
 
 

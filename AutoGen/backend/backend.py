@@ -29,7 +29,7 @@ def agents(llm_base):
     stock_prices_tool = FunctionTool(stock_prices, description='Historical prices and volume for a ticker')
     sec_filling_retrieve_tool = FunctionTool(sec_filling_retrieve, description='Sec filling information for a company')
     report_retrieve_tool = FunctionTool(research_retrieve, description='Research reports information for a company')
-    news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news for a company')
+    # news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news for a company')
 
     sec_filling_report_analysis_agent = ToolUseAssistantAgent(
         name='SEC_filling_report_analyst',
@@ -47,13 +47,13 @@ def agents(llm_base):
         system_message="You are a analyst, know for your ability to find the most relevant information and present it in a clear and concise manner.",
     )
 
-    news_analysis_agent = ToolUseAssistantAgent(
-        name="news_analyst",
-        model_client=llm_base,
-        registered_tools=[news_retrieve_tool],
-        description="Find the relevant news, provide an overview.",
-        system_message="You're a professional news analyst. Use the search tool provided and find the most relevant information and present it in a clear and concise manner.",
-    )
+    # news_analysis_agent = ToolUseAssistantAgent(
+    #     name="news_analyst",
+    #     model_client=llm_base,
+    #     registered_tools=[news_retrieve_tool],
+    #     description="Find the relevant news, provide an overview.",
+    #     system_message="You're a professional news analyst. Use the search tool provided and find the most relevant information and present it in a clear and concise manner.",
+    # )
 
     stock_price_analysis_agent = ToolUseAssistantAgent(
         name="stock_price_analyst",
@@ -73,7 +73,7 @@ def agents(llm_base):
     agents_mapping = {
         'sec_filling_report_analysis_agent': sec_filling_report_analysis_agent,
         'research_report_analysis_agent': research_report_analysis_agent,
-        'news_analysis_agent': news_analysis_agent,
+        # 'news_analysis_agent': news_analysis_agent,
         'stock_price_analysis_agent': stock_price_analysis_agent,
         'report_agent': report_agent
     }
@@ -108,3 +108,9 @@ class team:
         result = team.run(query)
 
         return result
+
+    def dialog_print(self, result):
+        for message in result.messages:
+            print(message.source + ":")
+            print(message.content)
+            print('________________________')
