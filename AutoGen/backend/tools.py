@@ -12,19 +12,27 @@ def stock_prices(ticker: str) -> pd.DataFrame:
     ticker (str): the stock ticker to be given to yfinance
 
     """
+    # Construct the relative path to the target data folder
+    import os
+    current_dir = os.path.dirname(__file__)
+    filepath = os.path.join(current_dir, '..', 'Data', 'price')
 
-    return pd.DataFrame(1)
+    # get the historical data (max 10yr)
+    df = pd.read_csv(os.path.join(filepath, f'{ticker}.csv'), index_col=0)
+    df.index = df.index.astype('datetime64[ns, America/New_York]')
+
+    return df.loc['2014-01-01':]
 
 
-def stock_news(ticker: str) -> list:
-    """
-    Get the most recent news of a stock or an instrument from Yahoo Finance
-
-    Args:
-    ticker (str): the stock ticker to be given to yfinance
-    """
-
-    return []
+# def stock_news(ticker: str) -> list:
+#     """
+#     Get the most recent news of a stock or an instrument from Yahoo Finance
+#
+#     Args:
+#     ticker (str): the stock ticker to be given to yfinance
+#     """
+#
+#     return []
 
 
 def db_retrieve(db: FAISS, query: str) -> str:
