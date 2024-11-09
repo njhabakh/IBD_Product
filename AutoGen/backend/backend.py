@@ -14,15 +14,15 @@ import yaml
 from tools import news_retrieve, sec_filling_retrieve, research_retrieve, stock_prices
 
 
-# llm_base = AzureOpenAIChatCompletionClient(
-#             model="gpt-4o",
-#             api_version="2024-02-01",
-#             model_capabilities={
-#                 "vision":True,
-#                 "function_calling":True,
-#                 "json_output":True,
-#             }
-#         )
+llm_base = AzureOpenAIChatCompletionClient(
+            model="gpt-4o",
+            api_version="2024-02-01",
+            model_capabilities={
+                "vision":True,
+                "function_calling":True,
+                "json_output":True,
+            }
+        )
 
 def agents(llm_base):
     ### tools registration
@@ -36,7 +36,7 @@ def agents(llm_base):
         model_client=llm_base,
         registered_tools=[sec_filling_retrieve_tool],
         description='Uncover information from SEC filling report',
-        system_message="You are a analyst, know for your ability to find the most relevant information and present it in a clear and concise manner."
+        system_message="You are a analyst, use your tools to find the most relevant information and present it in a clear and concise manner."
     )
 
     research_report_analysis_agent = ToolUseAssistantAgent(
@@ -44,7 +44,7 @@ def agents(llm_base):
         model_client=llm_base,
         registered_tools=[report_retrieve_tool],
         description="Uncover information from research reports",
-        system_message="You are a analyst, know for your ability to find the most relevant information and present it in a clear and concise manner.",
+        system_message="You are a analyst, use your tools to find the most relevant information and present it in a clear and concise manner.",
     )
 
     news_analysis_agent = ToolUseAssistantAgent(

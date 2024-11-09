@@ -9,12 +9,17 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
 
 import pathlib
+
 #########################################################################
 ### env
 embeddings = OpenAIEmbeddings(
     openai_api_key=os.getenv('Key_OpenAI')
 )
 
+global sec_filling_db
+global research_db
+global news_db
+global test
 
 def create_vector_database(file_path: str):
     loader=PyPDFDirectoryLoader(file_path)
@@ -50,7 +55,6 @@ def initialize_vector_store(file_mapping: dict):
     global research_db
     global news_db
 
-
     cwd = pathlib.Path.cwd()
     faiss_db_path = f"{cwd}/../../faiss-db/"
 
@@ -70,11 +74,12 @@ def initialize_vector_store(file_mapping: dict):
         research_db = FAISS.load_local(faiss_db_path + "research_report_db", embeddings=embeddings, allow_dangerous_deserialization=True)
         # news_db = FAISS.load_local(faiss_db_path + "news_db", embeddings=embeddings, allow_dangerous_deserialization=True)
 
-
 # TODO: add the fuctionality of adding or deleting files from db
 # thinking about add some process of selecting data files, summary then rag?
 
 
-
+def global_test():
+    global test
+    test = 1
 
 

@@ -1,6 +1,7 @@
 import pandas as pd
 from langchain_community.vectorstores import FAISS
 
+import vector_store
 ##################################################
 # yahoo finance
 
@@ -54,15 +55,10 @@ def db_retrieve(db: FAISS, query: str) -> str:
 
 # news retrieve
 def news_retrieve(query: str) -> str:
-    global news_db
-    return db_retrieve(news_db, query)
+    return db_retrieve(vector_store.news_db, query)
 
 def research_retrieve(query: str) -> str:
-    global research_db
-    return db_retrieve(research_db, query)
+    return db_retrieve(vector_store.research_db, query)
 
 def sec_filling_retrieve(query: str) -> str:
-    global sec_filling_db
-    return db_retrieve(sec_filling_db, query)
-
-
+    return db_retrieve(vector_store.sec_filling_db, query)
