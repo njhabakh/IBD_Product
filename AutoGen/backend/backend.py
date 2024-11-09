@@ -1,7 +1,7 @@
 import os
 
-# os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('Key_AzureOpenAI')
-# os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('Endpoint_AzureOpenAI')
+os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('Key_AzureOpenAI')
+os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('Endpoint_AzureOpenAI')
 
 from autogen_agentchat.agents import CodingAssistantAgent, ToolUseAssistantAgent
 from autogen_agentchat.task import TextMentionTermination
@@ -29,7 +29,7 @@ def agents(llm_base):
     stock_prices_tool = FunctionTool(stock_prices, description='Historical prices and volume for a ticker')
     sec_filling_retrieve_tool = FunctionTool(sec_filling_retrieve, description='Sec filling information for a company')
     report_retrieve_tool = FunctionTool(research_retrieve, description='Research reports information for a company')
-    # news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news for a company')
+    news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news for a company')
 
     sec_filling_report_analysis_agent = ToolUseAssistantAgent(
         name='SEC_filling_report_analyst',
@@ -47,13 +47,13 @@ def agents(llm_base):
         system_message="You are a analyst, know for your ability to find the most relevant information and present it in a clear and concise manner.",
     )
 
-    # news_analysis_agent = ToolUseAssistantAgent(
-    #     name="news_analyst",
-    #     model_client=llm_base,
-    #     registered_tools=[news_retrieve_tool],
-    #     description="Find the relevant news, provide an overview.",
-    #     system_message="You're a professional news analyst. Use the search tool provided and find the most relevant information and present it in a clear and concise manner.",
-    # )
+    news_analysis_agent = ToolUseAssistantAgent(
+        name="news_analyst",
+        model_client=llm_base,
+        registered_tools=[news_retrieve_tool],
+        description="Find the relevant news, provide an overview.",
+        system_message="You're a professional news analyst. Use the search tool provided and find the most relevant information and present it in a clear and concise manner.",
+    )
 
     stock_price_analysis_agent = ToolUseAssistantAgent(
         name="stock_price_analyst",
@@ -99,13 +99,13 @@ class team:
         for agents_name in particapants_list:
             self.particapants.append(agents_mapping[agents_name])
 
-    def run(self, query: str):
+    async def run(self, query: str):
         termination = TextMentionTermination("TERMINATE")
 
         team = RoundRobinGroupChat(self.particapants,
                                    termination_condition=termination)
 
-        result = team.run(query)
+        result = await team.run(query)
 
         return result
 

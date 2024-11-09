@@ -15,7 +15,7 @@ def stock_prices(ticker: str) -> pd.DataFrame:
     # Construct the relative path to the target data folder
     import os
     current_dir = os.path.dirname(__file__)
-    filepath = os.path.join(current_dir, '..', 'Data', 'price')
+    filepath = os.path.join(current_dir, '..', 'Data', 'stock_price')
 
     # get the historical data (max 10yr)
     df = pd.read_csv(os.path.join(filepath, f'{ticker}.csv'), index_col=0)

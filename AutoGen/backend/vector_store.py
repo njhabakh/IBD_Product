@@ -8,6 +8,7 @@ from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
 
+import pathlib
 #########################################################################
 ### env
 embeddings = OpenAIEmbeddings(
@@ -31,6 +32,10 @@ def create_vector_database(file_path: str):
     return vector_store
 
 
+# adding html parser
+
+
+
 
 # data_folder = "../../../Data"
 #
@@ -43,11 +48,33 @@ def create_vector_database(file_path: str):
 def initialize_vector_store(file_mapping: dict):
     global sec_filling_db
     global research_db
-    # global news_db
+    global news_db
 
-    sec_filling_db = create_vector_database(file_mapping['sec_filling'])
-    research_db = create_vector_database(file_mapping['research_report'])
-    # news_db = create_vector_database(file_mapping['news'])
+
+    cwd = pathlib.Path.cwd()
+    faiss_db_path = f"{cwd}/../../faiss-db/"
+
+
+    if file_mapping:
+        sec_filling_db = create_vector_database(file_mapping['sec_filling'])
+        research_db = create_vector_database(file_mapping['research_report'])
+        # news_db = create_vector_database(file_mapping['news'])
+
+        # save the files
+        sec_filling_db.save_local( faiss_db_path + "sec_filling_db")
+        research_db.save_local( faiss_db_path + "research_report_db" )
+        # news_db.save_local(faiss_db_path + "news_db")
+
+    else:
+        sec_filling_db = FAISS.load_local(faiss_db_path + "sec_filling_db", embeddings=embeddings, allow_dangerous_deserialization=True)
+        research_db = FAISS.load_local(faiss_db_path + "research_report_db", embeddings=embeddings, allow_dangerous_deserialization=True)
+        # news_db = FAISS.load_local(faiss_db_path + "news_db", embeddings=embeddings, allow_dangerous_deserialization=True)
+
+
+# TODO: add the fuctionality of adding or deleting files from db
+# thinking about add some process of selecting data files, summary then rag?
+
+
 
 
 
