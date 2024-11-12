@@ -2,7 +2,8 @@ import streamlit as st
 from page_modules.profiler import show_profiler
 from page_modules.chat_bot import show_chat_bot
 from page_modules.valuation import show_valuation
-from page_modules.overview import show_overview  # Import the Overview function
+from page_modules.Introduction import show_overview  # Import the Overview function
+from page_modules.call_backend import get_financial_report
 
 import pandas as pd
 
@@ -25,13 +26,15 @@ page = st.sidebar.radio("Go to", ["Profiler", "Chat Bot", "Valuation"])
 # Only display the content if "Start" button has been clicked
 if st.session_state["started"]:
 
+    result = get_financial_report(test = True, ticker = company_ticker)
+    
     # Set the selected page in session state for tracking
     st.session_state["page"] = page
 
     #st.markdown('<div class="main-content">', unsafe_allow_html=True)
     # Display the selected page content
     if st.session_state["page"] == "Profiler":
-        show_profiler()
+        show_profiler(result)
     elif st.session_state["page"] == "Chat Bot":
         show_chat_bot()
     elif st.session_state["page"] == "Valuation":

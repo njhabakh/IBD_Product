@@ -26,7 +26,7 @@ def create_bar_chart():
     return fig_path
 ####
 
-def show_profiler():
+def show_profiler(result):
     # Load custom CSS
     with open("style.css") as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -37,7 +37,8 @@ def show_profiler():
     # Collect content for each tab
     content = {}
     with profiler_tabs[0]:
-        content["Overview"] = "This is the company overview with a sample paragraph.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nisl vel mauris blandit interdum."
+        # content["Overview"] = "This is the company overview with a sample paragraph.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nisl vel mauris blandit interdum."
+        content["Overview"] = result['overview']
         st.write("### Overview")
         st.write(content["Overview"])
 
@@ -60,7 +61,8 @@ def show_profiler():
         st.write(content["Management"])
 
     with profiler_tabs[4]:
-        content["Recent News"] = "1. Company launches new product.\n2. Q3 earnings report shows positive growth.\n3. Expansion into new markets."
+        # content["Recent News"] = "1. Company launches new product.\n2. Q3 earnings report shows positive growth.\n3. Expansion into new markets."
+        content['Recent News'] = result['news']
         st.write("### Recent News")
         st.write(content["Recent News"])
 
