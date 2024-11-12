@@ -4,6 +4,7 @@ from page_modules.chat_bot import show_chat_bot
 from page_modules.valuation import show_valuation
 from page_modules.Introduction import show_overview  # Import the Overview function
 from page_modules.call_backend import get_financial_report
+from page_modules.utilities import save_content_to_ppt
 
 import pandas as pd
 
@@ -40,6 +41,16 @@ if st.session_state["started"]:
     elif st.session_state["page"] == "Valuation":
         show_valuation()
     #st.markdown('</div>', unsafe_allow_html=True)
+
+    # Display slides which will be included in presentation
+    possible_slides = ["Overview", "Financials", "Geographic Mix", "Management Information",
+                       "Recent News", "Discounted Cash Flow Analysis", "Leveraged Buyout Analysis"]
+    for title in possible_slides:
+        if st.session_state.get(title, False):
+            st.sidebar.markdown(title + " Slide")
+    # Download presentation
+    if st.sidebar.button("Download PPT", key=page):
+        save_content_to_ppt()
 
 else:
     # Display a message prompting the user to click the Start button
