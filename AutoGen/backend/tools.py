@@ -36,12 +36,11 @@ def stock_prices(ticker: str) -> pd.DataFrame:
 #     return []
 
 
-def db_retrieve(db: FAISS, query: str) -> str:
+def db_retrieve(db: vector_store.FAISS_manager, query: str, top_k: int = 2) -> str:
     """
     Retrieve the relevant information and print out
     """
-    retriever = db.as_retriever()
-    resources = retriever.get_relevant_documents(query)
+    resources = db.search(query, top_k=top_k)
 
     text_result = ""
     for resource in resources:
@@ -51,6 +50,8 @@ def db_retrieve(db: FAISS, query: str) -> str:
         text_result = text_result + text
 
     return text_result
+
+
 
 
 # news retrieve

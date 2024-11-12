@@ -27,9 +27,9 @@ llm_base = AzureOpenAIChatCompletionClient(
 def agents(llm_base):
     ### tools registration
     stock_prices_tool = FunctionTool(stock_prices, description='Historical prices and volume for a ticker')
-    sec_filling_retrieve_tool = FunctionTool(sec_filling_retrieve, description='10k Sec Filling database search')
-    report_retrieve_tool = FunctionTool(research_retrieve, description='Research reports database search')
-    news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news')
+    sec_filling_retrieve_tool = FunctionTool(sec_filling_retrieve, description='Relevant 10k sec filling reports info for a question')
+    report_retrieve_tool = FunctionTool(research_retrieve, description='Relevant research reports info for a question')
+    news_retrieve_tool = FunctionTool(news_retrieve, description='Relevant recent news for a question')
 
     sec_filling_report_analysis_agent = ToolUseAssistantAgent(
         name='SEC_filling_report_analyst',

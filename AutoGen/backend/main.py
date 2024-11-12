@@ -1,5 +1,4 @@
 from vector_store import initialize_vector_store
-from vector_store import global_test
 from backend import team
 import vector_store
 
@@ -18,16 +17,17 @@ async def main():
     data_folder = f"{cwd}/../../Data"
     #
     file_mapping = {
-        'sec_filling': f"{data_folder}/10k/",
-        'research_report': f'{data_folder}/research_reports/',
-        # 'news': f'{data_folder}/news/',
+        'sec_filling': f"{data_folder}/10k_mini/",
+        'research_report': f'{data_folder}/research_reports_mini/',
+        'news': f'{data_folder}/news_mini/',
     }
 
     initialize_vector_store(file_mapping)
+    print('done with vector store init\n')
 
     basic_info_team = team(['sec_filling_report_analysis_agent', 'report_agent'])
 
-    result =await basic_info_team.run("What does company Google do")
+    result =await basic_info_team.run("who are Google's competitors")
     basic_info_team.dialog_print(result)
 
 # main()

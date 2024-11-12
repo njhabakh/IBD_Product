@@ -1,19 +1,30 @@
 import os
-os.environ['OPENAI_API_KEY'] = os.getenv('Key_OpenAI')
-from langchain_community.embeddings import OpenAIEmbeddings
+
+import faiss
+
+os.environ["AZURE_OPENAI_API_KEY"] = os.getenv('Key_AzureOpenAI')
+os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv('Endpoint_AzureOpenAI')
+
 from langchain_openai import AzureOpenAIEmbeddings
 
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
+from bs4 import BeautifulSoup
+import glob
+from langchain_core.documents import Document
+
+import faiss
+from langchain.document_loaders import PyPDFLoader
+from langchain_community.docstore.in_memory import InMemoryDocstore
 
 import pathlib
 
 #########################################################################
 ### env
-embeddings = OpenAIEmbeddings(
-    openai_api_key=os.getenv('Key_OpenAI')
+embeddings = AzureOpenAIEmbeddings(
+    model="text-embedding-3-large"
 )
 
 global sec_filling_db
@@ -21,34 +32,59 @@ global research_db
 global news_db
 global test
 
-def create_vector_database(file_path: str):
-    loader=PyPDFDirectoryLoader(file_path)
-    docs=loader.load()
 
-    documents = RecursiveCharacterTextSplitter(
-        chunk_size=1000, separators=["\n","\n\n"], chunk_overlap=200
-    ).split_documents(docs)
+def extract_text_from_html(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
 
-    vector_store = FAISS.from_documents(
-        documents=documents,
-        embedding=embeddings
-    )
+    # Remove script and style elements
+    for script_or_style in soup(['script', 'style']):
+        script_or_style.decompose()
 
-    return vector_store
-
-
-# adding html parser
+    # Get text
+    text = soup.get_text(separator='\n')
+    # Clean up text
+    lines = (line.strip() for line in text.splitlines())
+    chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+    text = '\n'.join(chunk for chunk in chunks if chunk)
+    return text
 
 
+def html_load(html_file):
+
+    with open(html_file, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+
+    text_content = extract_text_from_html(html_content)
+    docs = [
+            Document(
+                metadata={"source": html_file},
+                page_content=text_content,
+            )
+    ]
+    return docs
 
 
-# data_folder = "../../../Data"
-#
-# file_mapping = {
-#     'sec_filling': f"{data_folder}/10k/",
-#     'research_report': f'{data_folder}/research_reports/',
-#     'news': f'{data_folder}/news/',
-# }
+def create_vector_database(file_path: str, format: str, chunk_size: int = 1000, chunk_overlap: int = 200):
+    FAISS_mr = FAISS_manager(embedding=embeddings)
+
+    files_list = glob.glob(f"{file_path}/*.{format}")
+    for file in files_list:
+        if format == 'pdf':
+            loader=PyPDFLoader(file)
+            docs=loader.load()
+        elif format == 'html':
+            docs = html_load(file)
+        else:
+            raise ValueError(f"format: {format} not supported, now only supports 'pdf' and 'html'")
+
+        documents = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size, separators=["\n","\n\n"], chunk_overlap=chunk_overlap
+        ).split_documents(docs)
+
+        FAISS_mr.add_documents(documents=documents)
+
+    return FAISS_mr
+
 
 def initialize_vector_store(file_mapping: dict):
     global sec_filling_db
@@ -58,28 +94,51 @@ def initialize_vector_store(file_mapping: dict):
     cwd = pathlib.Path.cwd()
     faiss_db_path = f"{cwd}/../../faiss-db/"
 
-
     if file_mapping:
-        sec_filling_db = create_vector_database(file_mapping['sec_filling'])
-        research_db = create_vector_database(file_mapping['research_report'])
-        # news_db = create_vector_database(file_mapping['news'])
+        sec_filling_db = create_vector_database(file_mapping['sec_filling'], format='pdf')
+        research_db = create_vector_database(file_mapping['research_report'], format='pdf')
+        news_db = create_vector_database(file_mapping['news'], format='html')
 
         # save the files
         sec_filling_db.save_local( faiss_db_path + "sec_filling_db")
         research_db.save_local( faiss_db_path + "research_report_db" )
-        # news_db.save_local(faiss_db_path + "news_db")
+        news_db.save_local(faiss_db_path + "news_db")
 
     else:
         sec_filling_db = FAISS.load_local(faiss_db_path + "sec_filling_db", embeddings=embeddings, allow_dangerous_deserialization=True)
         research_db = FAISS.load_local(faiss_db_path + "research_report_db", embeddings=embeddings, allow_dangerous_deserialization=True)
-        # news_db = FAISS.load_local(faiss_db_path + "news_db", embeddings=embeddings, allow_dangerous_deserialization=True)
+        news_db = FAISS.load_local(faiss_db_path + "news_db", embeddings=embeddings, allow_dangerous_deserialization=True)
+
 
 # TODO: add the fuctionality of adding or deleting files from db
 # thinking about add some process of selecting data files, summary then rag?
 
+# a lazy implementation to accommodate langchain use
+class FAISS_manager:
+    def __init__(self, embedding):
+        # initial index from the embedding
+        index = faiss.IndexFlatL2(len(embedding.embed_query("hello world")))
+        self.vector_store = FAISS(
+            embedding_function=embedding,
+            index=index,
+            docstore=InMemoryDocstore(),
+            index_to_docstore_id={},
+        )
 
-def global_test():
-    global test
-    test = 1
+    def add_documents(self, documents: [Document]):
+        self.vector_store.add_documents(documents=documents)
 
+
+    def search(self, query, top_k):
+        retriever = self.vector_store.as_retriever()
+        result = retriever.get_relevant_documents(query)
+        return result[:top_k]
+
+
+    def save_local(self, dir):
+        self.vector_store.save_local(dir)
+
+
+    def load_local(self, dir, embeddings):
+        self.vector_store = FAISS.load_local(dir, embeddings=embeddings, allow_dangerous_deserialization=True)
 
