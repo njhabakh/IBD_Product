@@ -7,8 +7,8 @@ def get_financial_report(test=False, ticker=None):
         import os
         import json
         
-        assert(ticker=='AAPL', f'do not support sample {ticker}')
-        with open(os.path.join(os.path.dirname(__file__), '..', 'samplejson', 'AAPL.json')) as jsfile:
+        assert ticker=='AAPL' or ticker=='GOOGL', f'do not support sample {ticker}'
+        with open(os.path.join(os.path.dirname(__file__), '..', 'samplejson', f'{ticker}.json')) as jsfile:
             res = json.load(jsfile)
         
         ## formatting: drop unfinished sentence
