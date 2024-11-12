@@ -36,29 +36,36 @@ def stock_prices(ticker: str) -> pd.DataFrame:
 #     return []
 
 
-def db_retrieve(db: FAISS, query: str) -> str:
+def db_retrieve(db: vector_store.FAISS_manager, query: str, top_k: int = 2) -> list:
     """
     Retrieve the relevant information and print out
     """
-    retriever = db.as_retriever()
-    resources = retriever.get_relevant_documents(query)
+    resources = db.search(query, top_k=top_k)
 
-    text_result = ""
+    result = []
     for resource in resources:
         metadata = resource.metadata
         content = resource.page_content
-        text = f"From document {metadata['source']} page {metadata['page']}, we have following information. \n {content} \n"
-        text_result = text_result + text
 
-    return text_result
+        result.append({
+            'metadata': metadata,
+            'content': content
+        })
+        # text = f"From document {metadata['source']} page {metadata['page']}, we have following information. \n {content} \n"
+        # text_result = text_result + text
+
+    return result
+
+
 
 
 # news retrieve
-def news_retrieve(query: str) -> str:
+def news_retrieve(query: str) -> list:
+    print(query)
     return db_retrieve(vector_store.news_db, query)
 
-def research_retrieve(query: str) -> str:
+def research_retrieve(query: str) -> list:
     return db_retrieve(vector_store.research_db, query)
 
-def sec_filling_retrieve(query: str) -> str:
+def sec_filling_retrieve(query: str) -> list:
     return db_retrieve(vector_store.sec_filling_db, query)
