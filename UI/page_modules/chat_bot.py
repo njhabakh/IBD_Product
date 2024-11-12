@@ -3,11 +3,20 @@ import streamlit as st
 
 # Create an agent that can access and use a large language model (LLM).
 def create_agent():
+
+    # load environment variable - saved project root folder
+    from dotenv import load_dotenv
+    import os
+    env_path = os.path.join(os.path.dirname(__file__), '..', '..' , ".env")
+    load_dotenv(dotenv_path = env_path)
+
+    # init AzureChatOpenAI
+    from langchain.chat_models import AzureChatOpenAI
+    os.environ['AZURE_OPENAI_API_KEY'] = os.getenv('AZURE_OPENAI_API_KEY')
+    os.environ['AZURE_OPENAI_ENDPOINT'] = os.getenv('AZURE_OPENAI_ENDPOINT')
+    os.environ['OPENAI_API_VERSION'] = '2024-02-01'
+    llm = AzureChatOpenAI(deployment_name='gpt-4', model_name='gpt-4')
     
-    ### replace with AzureAI
-    from langchain import OpenAI
-    API_KEY = 'tmp-open-ai-api-key'
-    llm = OpenAI(openai_api_key=API_KEY)
     return llm
 
 # Query an agent and return the response as a string.
@@ -52,7 +61,7 @@ def query_agent(agent, query):
     response = agent.invoke(prompt)
 
     # Convert the response to a string.
-    return response.__str__()
+    return response.content
 
 
 # Initialize chat history in session state
