@@ -13,6 +13,8 @@ import glob
 
 
 ### initializing the data store
+
+# pre-defined
 cwd = pathlib.Path.cwd()
 data_folder = f"{cwd}/../../Data"
 #
@@ -29,6 +31,8 @@ else:
 
 print('done with vector store init\n')
 
+
+# The part which needs to be called at front end
 async def frontend_run():
 
     basic_info_team = team(['news_analysis_agent', 'report_agent'])
