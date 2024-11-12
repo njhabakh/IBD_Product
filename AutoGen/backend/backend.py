@@ -27,23 +27,23 @@ llm_base = AzureOpenAIChatCompletionClient(
 def agents(llm_base):
     ### tools registration
     stock_prices_tool = FunctionTool(stock_prices, description='Historical prices and volume for a ticker')
-    sec_filling_retrieve_tool = FunctionTool(sec_filling_retrieve, description='Sec filling information for a company')
-    report_retrieve_tool = FunctionTool(research_retrieve, description='Research reports information for a company')
-    news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news for a company')
+    sec_filling_retrieve_tool = FunctionTool(sec_filling_retrieve, description='10k Sec Filling database search')
+    report_retrieve_tool = FunctionTool(research_retrieve, description='Research reports database search')
+    news_retrieve_tool = FunctionTool(news_retrieve, description='Most recent news')
 
     sec_filling_report_analysis_agent = ToolUseAssistantAgent(
         name='SEC_filling_report_analyst',
         model_client=llm_base,
         registered_tools=[sec_filling_retrieve_tool],
-        description='Uncover information from SEC filling report',
-        system_message="You are a analyst, use your tools to find the most relevant information and present it in a clear and concise manner."
+        description='uncover and review relevant information from 10k sec filling reports',
+        system_message="You are a helpful assistant with stock pitch, use your tool to retrieve the most relevant information provided"
     )
 
     research_report_analysis_agent = ToolUseAssistantAgent(
         name="research_report_analyst",
         model_client=llm_base,
         registered_tools=[report_retrieve_tool],
-        description="Uncover information from research reports",
+        description="uncover and review relevant information from research reports",
         system_message="You are a analyst, use your tools to find the most relevant information and present it in a clear and concise manner.",
     )
 
@@ -51,7 +51,7 @@ def agents(llm_base):
         name="news_analyst",
         model_client=llm_base,
         registered_tools=[news_retrieve_tool],
-        description="Find the relevant news, provide an overview.",
+        description="uncover and review relevant information from research reports",
         system_message="You're a professional news analyst. Use the search tool provided and find the most relevant information and present it in a clear and concise manner.",
     )
 
@@ -99,6 +99,7 @@ class team:
         for agents_name in particapants_list:
             self.particapants.append(agents_mapping[agents_name])
 
+
     async def run(self, query: str):
         termination = TextMentionTermination("TERMINATE")
 
@@ -108,6 +109,7 @@ class team:
         result = await team.run(query)
 
         return result
+
 
     def dialog_print(self, result):
         for message in result.messages:
