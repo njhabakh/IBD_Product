@@ -73,7 +73,7 @@ def agents(llm_base):
     agents_mapping = {
         'sec_filling_report_analysis_agent': sec_filling_report_analysis_agent,
         'research_report_analysis_agent': research_report_analysis_agent,
-        # 'news_analysis_agent': news_analysis_agent,
+        'news_analysis_agent': news_analysis_agent,
         'stock_price_analysis_agent': stock_price_analysis_agent,
         'report_agent': report_agent
     }

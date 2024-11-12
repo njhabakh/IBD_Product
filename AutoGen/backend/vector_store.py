@@ -105,9 +105,13 @@ def initialize_vector_store(file_mapping: dict):
         news_db.save_local(faiss_db_path + "news_db")
 
     else:
-        sec_filling_db = FAISS.load_local(faiss_db_path + "sec_filling_db", embeddings=embeddings, allow_dangerous_deserialization=True)
-        research_db = FAISS.load_local(faiss_db_path + "research_report_db", embeddings=embeddings, allow_dangerous_deserialization=True)
-        news_db = FAISS.load_local(faiss_db_path + "news_db", embeddings=embeddings, allow_dangerous_deserialization=True)
+        sec_filling_db = FAISS_manager(embedding=embeddings)
+        research_db = FAISS_manager(embedding=embeddings)
+        news_db = FAISS_manager(embedding=embeddings)
+
+        sec_filling_db.load_local(faiss_db_path + "sec_filling_db", embeddings=embeddings)
+        research_db.load_local(faiss_db_path + "research_report_db", embeddings=embeddings)
+        news_db.load_local(faiss_db_path + "news_db", embeddings=embeddings)
 
 
 # TODO: add the fuctionality of adding or deleting files from db
