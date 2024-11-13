@@ -5,8 +5,13 @@ from page_modules.valuation import show_valuation
 from page_modules.Introduction import show_overview  # Import the Overview function
 from page_modules.call_backend import get_financial_report
 from page_modules.utilities import save_content_to_ppt
+from page_modules.about import show_about
+from page_modules.help import show_help
+
 
 import pandas as pd
+
+st.set_page_config(page_title="Company Analysis Dashboard", layout="wide")
 
 # Sidebar layout for "Company/ Ticker" input and Start button
 st.sidebar.markdown("### Company/ Ticker")
@@ -22,7 +27,7 @@ if "started" not in st.session_state:
     
 # Navigation using st.radio for persistent state
 st.sidebar.markdown("## Navigation")
-page = st.sidebar.radio("Go to", ["Profiler", "Chat Bot", "Valuation"])
+page = st.sidebar.radio("Go to", ["Profiler", "Chat Bot", "Valuation", "About", "Help"])
 
 # Only display the content if "Start" button has been clicked
 if st.session_state["started"]:
@@ -40,11 +45,15 @@ if st.session_state["started"]:
         show_chat_bot()
     elif st.session_state["page"] == "Valuation":
         show_valuation()
+    elif st.session_state["page"] == "About":
+        show_about()
+    elif st.session_state["page"] == "Help":
+        show_help()
     #st.markdown('</div>', unsafe_allow_html=True)
 
     # Display slides which will be included in presentation
     possible_slides = ["Overview", "Financials", "Geographic Mix", "Management Information",
-                       "Recent News", "Discounted Cash Flow Analysis", "Leveraged Buyout Analysis"]
+                       "Recent News", "M&A Profile", "Discounted Cash Flow Analysis", "Leveraged Buyout Analysis"]
     for title in possible_slides:
         if st.session_state.get(title, False):
             st.sidebar.markdown(title + " Slide")
