@@ -36,7 +36,7 @@ def show_profiler(result):
     with profiler_tabs[0]:
         # overview_str = "This is the company overview with a sample paragraph.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nisl vel mauris blandit interdum."
         overview_str = result['overview']
-        st.write("### Overview")
+        # st.write("### Overview")
         st.write(overview_str)
         agree = st.checkbox("Add Overview to presentation",
                             value = st.session_state.get('Overview', False))
